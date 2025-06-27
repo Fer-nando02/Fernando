@@ -1,0 +1,251 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  background-color: #1a1f2b;
+  color: #f5f5f5;
+}
+
+/* Navegación */
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #e0b872;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  background-image: url('https://cdn.pixabay.com/photo/2024/05/09/06/52/ai-generated-8749987_960_720.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(26, 31, 43, 0.8);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: #e0b872;
+}
+
+.title {
+  font-size: 4rem;
+  letter-spacing: 10px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #f5f5f5;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  border: 2px solid #e0b872;
+  color: #e0b872;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e0b872;
+  color: #1a1f2b;
+}
+
+.contacto {
+  background-color: #1a1f2b;
+  color: #f5f5f5;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contacto h2 {
+  font-size: 2.5rem;
+  color: #e0b872;
+  margin-bottom: 10px;
+}
+
+.contacto p {
+  font-size: 1rem;
+  margin-bottom: 40px;
+  color: #ccc;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #2a2f3d;
+  color: #f5f5f5;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #999;
+}
+
+.contact-form button {
+  padding: 15px;
+  font-size: 1rem;
+  background-color: transparent;
+  border: 2px solid #e0b872;
+  color: #e0b872;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #e0b872;
+  color: #1a1f2b;
+}
+
+.sobre-mi {
+  background-color: #1a1f2b;
+  color: #f5f5f5;
+  padding: 60px 20px;
+}
+
+.sobre-mi-contenido {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.sobre-mi-texto {
+  flex: 1 1 500px;
+}
+
+.sobre-mi h2 {
+  font-size: 2.5rem;
+  color: #e0b872;
+  margin-bottom: 20px;
+}
+
+.sobre-mi p {
+  line-height: 1.6;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.sobre-mi-img {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.sobre-mi-img img {
+  max-width: 250px;
+  border-radius: 50%;
+  border: 4px solid #e0b872;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.servicios {
+  background-color: #1a1f2b;
+  color: #f5f5f5;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.servicios h2 {
+  font-size: 2.5rem;
+  color: #e0b872;
+  margin-bottom: 40px;
+}
+
+.contenedor-servicios {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.servicio {
+  background-color: #2a2f3d;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.servicio:hover {
+  transform: translateY(-5px);
+}
+
+.servicio h3 {
+  color: #e0b872;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.servicio p {
+  color: #ccc;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.servicio video {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 2px solid #e0b872;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
